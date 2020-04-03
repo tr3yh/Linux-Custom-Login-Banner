@@ -1,0 +1,9 @@
+[Unit]
+Description = Banner IP Service
+After = network.target
+
+[Service]
+ExecStart = /scripts/ip.sh
+
+[Install]
+WantedBy=multi-user.target
